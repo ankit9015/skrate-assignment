@@ -1,0 +1,47 @@
+.login {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--white);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__content {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3rem;
+  width: fit-content;
+  max-width: 80%;
+  height: fit-content;
+}
+
+.login__curves {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  max-width: 50%;
+  height: auto;
+}
+
+.login__hero-img {
+  object-fit: contain;
+  position: absolute;
+  width: 40rem;
+  height: auto;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+@media screen and (max-width: 834px) {
+  .login__hero-img {
+    display: none;
+  }
+
+  .login__content {
+    margin: auto;
+  }
+}
